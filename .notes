@@ -1,2 +1,3 @@
 -use absolute imports & aliases 
 -add storybook 
+-extract nav styles to object in separate file

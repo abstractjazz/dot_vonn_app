@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       
      
-      <main className='mx-32'>
+      <main className="mx-32">
       <h1 className="text-3xl text-yellow-700 font-bold underline border-solid border-white border">
       Hello world!
     </h1>
