@@ -255,7 +255,7 @@ export default function Example() {
               </a>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-black px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#8fe388ff] hover:text-black"
+                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-black px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#00ffff] hover:text-black"
               >
                 Sign up
               </a>
@@ -365,7 +365,7 @@ export default function Example() {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-[#8fe388ff] hover:text-black md:py-4 md:px-10 md:text-lg"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-[#00ffff] hover:text-black md:py-4 md:px-10 md:text-lg"
                 >
                   Get started
                 </a>
