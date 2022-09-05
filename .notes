@@ -1,4 +1,5 @@
 -use absolute imports & aliases 
 -add storybook 
 -extract nav styles to object in separate file
--replace favicon with a gradient dot
+-replace favicon with a yellow dot
+-use p5 on video page to make page more interactive 
