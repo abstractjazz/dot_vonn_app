@@ -2,4 +2,6 @@
 -add storybook 
 -extract nav styles to object in separate file
 -replace favicon with a yellow dot
--use p5 on video page to make page more interactive 
+-use p5 on hero page to make video more interesting/interactive 
+add Footer to bottom scroll on index
+-add FAQ

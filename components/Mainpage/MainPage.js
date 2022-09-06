@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function MainPage() {
   return (
     <section>
-    <div className="relative bg-red-500">
+    <div className="relative">
        
       <main className="lg:relative">
         <div className="mx-auto w-full max-w-7xl pt-16 pb-5 md:pb-20 text-center lg:py-48 lg:text-left">
