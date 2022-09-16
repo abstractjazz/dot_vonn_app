@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Example() {
+export default function HowItWorks() {
     return (
       <div className="relative bg-white">
         <div className="lg:absolute lg:inset-0">

@@ -53,11 +53,11 @@ const tiers = [
 export default function Pricing() {
   return (
     <div>
-      <div className="mx-auto max-w-7xl py-24 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
         <div className="sm:align-center sm:flex sm:flex-col">
           <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-center">Pricing Plans</h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
-            Start building for free, then add a site plan to go live. Account plans unlock additional features.
+            Pick a retainer. Or start small with a single service. 
           </p>
           <div className="relative mt-6 flex self-center rounded-lg bg-gray-100 p-0.5 sm:mt-8">
             <button
@@ -107,5 +107,6 @@ export default function Pricing() {
         </div>
       </div>
     </div>
+    
   )
 }
