@@ -1,7 +1,17 @@
--use absolute imports & aliases 
+<!-- -use absolute imports & aliases  -->
 -add storybook 
--extract nav styles to object in separate file
+-extract styles to objects in separate file
 -replace favicon with a yellow dot
 -use p5 on hero page to make video more interesting/interactive 
+-experiment with grabbing elements using p5 element
+-experiment with inserting canvas into page using parent()
 -install GA
+-remove portfolio page
+-use pricing comparison table 
+-& then pricing 3-up
+-make video page its own section
+-make how it works it's own section
+-add social proof section 
+-(use off menu site as inspo)
+-change sign-up / sign-in to get access
 -add 'creative talent who wants to work with us?' page 
