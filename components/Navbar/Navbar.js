@@ -11,7 +11,7 @@ const Navbar = ()=>{
 return(
 
   <>
-   <Disclosure as="nav" className="bg-white sticky top-0 shadow z-50">
+   <Disclosure as="nav" className="bg-white shadow drop-shadow-md sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -35,7 +35,7 @@ return(
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
                   >
                     About us
                   </a>
@@ -62,19 +62,19 @@ return(
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 <button
                   type="button"
-                  className="rounded-md bg-black p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                  Sign Up
+                  className="p-1 text-black border-2 border-black hover:bg-[#ffc800ff] focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
+                 Get Access
                   {/* <span className="sr-only">View notifications</span> */}
                   {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
                 </button>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
-                  <div>
+                  {/* <div>
                     <button className="flex rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                       Sign In
                    </button>
-                  </div>
+                  </div> */}
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-200"
@@ -121,7 +121,7 @@ return(
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -141,31 +141,31 @@ return(
                 href="#"
                 className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
               >
-                Dashboard
+                About us
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
               >
-                Team
+                How it works
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
               >
-                Projects
+                Pricing
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
               >
-                Calendar
+                Contact
               </Disclosure.Button>
             </div>
-            <div className="border-t border-gray-200 pt-4 pb-3">
+            {/* <div className="border-t border-gray-200 pt-4 pb-3">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
                   <img
@@ -209,7 +209,7 @@ return(
                   Sign out
                 </Disclosure.Button>
               </div>
-            </div>
+            </div> */}
           </Disclosure.Panel>
         </>
       )}
