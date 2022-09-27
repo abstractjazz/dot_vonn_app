@@ -9,7 +9,7 @@ const posts = [
     href: '#',
     category: { name: 'Web', href: '#' },
     description:
-      'Homebase, Digital HQ, Internet Empire. Whatever you call it, you need an effective website.',
+      'Homebase, Digital HQ, Internet Empire. Whatever you call it, get a custom-built, creative & effective website.',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     imageUrl:
@@ -21,14 +21,14 @@ const posts = [
       imageUrl:
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    serviceList: ['Landing page', 'Business site with CMS', 'Portfolio', 'Blog', 'Custom Web App'],
+    serviceList: ['Landing pages', 'Business site with blog/CMS', 'eCommerce', 'Portfolio', 'Custom Web App'],
   },
   {
     title: "Make custom content that fits your brand",
     href: '#',
     category: { name: 'Content', href: '#' },
     description:
-      "Turns out content is legit hard work. Lol, who knew? Let's lighten that load up.",
+     "Lol, yep. Content is hard. We'll help lighten that load up.",
     date: 'Mar 10, 2020',
     datetime: '2020-03-10',
     imageUrl:
@@ -40,7 +40,7 @@ const posts = [
       imageUrl:
         'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    serviceList: ['Design', 'Social Copy', 'Templates', 'Blog Posts', 'Email'],
+    serviceList: ['Social design & copy', 'Custom social media templates', 'Blog posts', 'Creative branding'],
   },
   {
     title: "Set a strong foundation with content strategy and brand strategy",
@@ -59,7 +59,7 @@ const posts = [
       imageUrl:
         'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    serviceList: ['Brand Voice and Tone', 'Content Strategy', 'Channel Strategy','Page Audit', 'Competitor Audit' ],
+    serviceList: ['Content strategy', 'Channel strategy', 'Social brand audit & competitor audit' ],
   },
 ]
 
@@ -73,7 +73,7 @@ export default function Services() {
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Services</h2>
           <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-           You want to be creative and run your business. Not build websites, or worry about making the next batch of content. Our tech & talent can help keep your hustle going, your business booming. 
+            You be creative and run your business.<br></br> We'll help take care of the digital stuff. 
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">

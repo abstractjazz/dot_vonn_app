@@ -45,8 +45,10 @@ export default function MainPage() {
         
       <div className="vid-box mt-0 w-screen h-96 flex justify-center lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-1/2 lg:mt-40">
         
-            <video className="absolute w-[100%] md:h-96 lg:w-[75%] lg:inset-0 sm:w-screen  "  alt="fast paced video of example content and websites" muted="true" autoPlay="autoplay" loop="loop">
-              <source src="https://ik.imagekit.io/a9ltbtydo/sizzle-video/reduced_file.mp4" type="video/mp4"></source>
+            <video className="absolute w-[100%] md:h-96 lg:w-[75%] lg:inset-0 sm:w-screen"  alt="fast paced video of example content and websites" muted autoPlay="autoplay" loop="loop" poster="/vid_poster_image.jpg">
+              {/* <source src="https://ik.imagekit.io/a9ltbtydo/sizzle-video/reduced_file.mp4" type="video/mp4"></source> */}
+             
+            
             </video>
         </div>
       </main>
