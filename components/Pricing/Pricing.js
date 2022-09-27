@@ -14,33 +14,44 @@ const tiers = [
   {
     name: 'Creative Sprint',
     href: '#',
-    priceMonthly: '1085',
-    description:  "",
+    priceMonthly: '1195',
+    description:  "A few words here to describe. Not too many, or too little. Just right.",
     includedFeatures: [
-      'Potenti felis, in cras at at ligula nunc. ',
-      'Orci neque eget pellentesque.',
-      'Donec mauris sit in eu tincidunt etiam.',
-   
+      'Ad design (Facebook, Insta, TikTok, LinkedIn) - 3 ads perfectly to spec',
+      'Content Batch (9 posts on a single platform)',
+      'Blog post',
+      'Email design',
+      'Email copy / Newsletter copy',
+      'Page audit & competitor audit',
+      'Content pillars & content plan',
+      'Social content template (3 designs)', 
+      // add hover tooltips
     ],
-    pricingStructure: '/mo for 3 months'
+    pricingStructure: '/mo for 3 months. Choose any 3 services per month.',
+    includedServiceNumber: 3
   },
   {
     name: 'Creative Partnership',
     href: '#',
-    priceMonthly: 997,
+    priceMonthly: '1085',
     description: 'All the basics for starting a new business',
     includedFeatures: [
-      'Potenti felis, in cras at at ligula nunc. ',
-      'Orci neque eget pellentesque.',
-      'Donec mauris sit in eu tincidunt etiam.',
-      'Faucibus volutpat magna.',
+      'Ad design (Facebook, Insta, TikTok, LinkedIn) - 3 ads perfectly to spec',
+      'Content Batch (9 posts on a single platform)',
+      'Blog post',
+      'Email design',
+      'Email copy / Newsletter copy',
+      'Page audit & competitor audit',
+      'Content pillars & content plan',
+      'Social content template (3 designs)', 
     ],
-    pricingStructure:'/mo for 6 months'
+    pricingStructure:'/mo for 6 months. Choose any 3 services per month.',
+    includedServiceNumber: 3
   },
   {
     name: 'Strategic Partnership',
     href: '#',
-    priceMonthly: 749 ,
+    priceMonthly: '950',
     description: 'All the basics for starting a new business',
     includedFeatures: [
       'Potenti felis, in cras at at ligula nunc. ',
@@ -51,11 +62,18 @@ const tiers = [
       'Risus egestas faucibus.',
       'Risus cursus ullamcorper.',
     ],
-    pricingStructure: '/mo for 12 months'
+    pricingStructure: '/mo for 12 months. Choose any 5 services per month.',
+    includedServiceNumber: 5
   },
 ]
 
+
+
 export default function Pricing() {
+ const keyCheck = document.getElementById("keyCheck")
+ const pickAny = document.getElementById('pickAny')
+ keyCheck.key="Brand Starter Kit" ? pickAny.style.display="none" : pickAny.style.display=""
+
   return (
     <div>
       <div className="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
@@ -79,9 +97,11 @@ export default function Pricing() {
             </button>
           </div> */}
         </div>
+        
         <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
           {tiers.map((tier) => (
-            <div key={tier.name} className="divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm">
+           
+              <div id="keyCheck" key={tier.name} className="divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm">
               <div className="p-6">
                 <h2 className="text-lg font-medium leading-6 text-gray-900">{tier.name}</h2>
                 <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
@@ -97,7 +117,7 @@ export default function Pricing() {
                 </a>
               </div>
               <div className="px-6 pt-6 pb-8">
-                <h3 className="text-sm font-medium text-gray-900">What's included</h3>
+                <h3 className="text-sm font-medium text-gray-900">What's included: <br></br><span id="pickAny">Pick any {tier.includedServiceNumber} services per month</span></h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {tier.includedFeatures.map((feature) => (
                     <li key={feature} className="flex space-x-3">

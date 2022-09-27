@@ -1,4 +1,6 @@
-<!-- -use absolute imports & aliases  -->
+<!---use absolute imports & aliases  -->
+-add blog after 1st deploy 
+-needs comparison section -- why this makes sense -- 
 -add storybook 
 -extract styles to objects in separate file
 -replace favicon with a yellow dot
@@ -24,7 +26,8 @@ under services
 under pricing
 
 -what comes with a simple website?
-
+-can I repeat services in a month? Say I want only blog posts? 
+--can I do something more custom long-term arrangement?
 
 under both
 
