@@ -1,11 +1,14 @@
 import '../styles/globals.css'
 import Layout from '../components/layout'
 import Head from 'next/head'
+import Script from 'next/script'
+
 
 function MyApp({ Component, pageProps }) {
 return (
   <>
   <Head>
+  <Script src="" strategy="afterInteractive"/>
     <title>Dot Vonn</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel='dot vonn icon' href="/tab-favicon.png"/>
